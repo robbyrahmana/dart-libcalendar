@@ -22,8 +22,8 @@ void fromCJDNtoGregorianCjdnParameterLessThan2415021() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(e.reason,
-          equals('Parameter [cjdn] should be between 2415021 to 2488434.'));
+      expect(
+          e, equals('Parameter [cjdn] should be between 2415021 to 2488434.'));
     }
   });
 }
@@ -35,8 +35,8 @@ void fromCJDNtoGregorianCjdnParameterMoreThan2488434() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(e.reason,
-          equals('Parameter [cjdn] should be between 2415021 to 2488434.'));
+      expect(
+          e, equals('Parameter [cjdn] should be between 2415021 to 2488434.'));
     }
   });
 }

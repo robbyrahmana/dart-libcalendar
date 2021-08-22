@@ -26,8 +26,7 @@ void fromGregorianToCJDNYearParameterLessThan1900() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(
-          e.reason, equals('Parameter [year] should be between 1900 to 2100.'));
+      expect(e, equals('Parameter [year] should be between 1900 to 2100.'));
     }
   });
 }
@@ -39,8 +38,7 @@ void fromGregorianToCJDNYearParameterMoreThan2100() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(e.reason,
-          equals('Parameter [year] should be between 1900 to 2100.'));
+      expect(e, equals('Parameter [year] should be between 1900 to 2100.'));
     }
   });
 }
@@ -52,8 +50,7 @@ void fromGregorianToCJDNMonthParameterLessThan1() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(
-          e.reason, equals('Parameter [month] should be between 1 to 12.'));
+      expect(e, equals('Parameter [month] should be between 1 to 12.'));
     }
   });
 }
@@ -65,8 +62,7 @@ void fromGregorianToCJDNMonthParameterMoreThan12() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(e.reason,
-          equals('Parameter [month] should be between 1 to 12.'));
+      expect(e, equals('Parameter [month] should be between 1 to 12.'));
     }
   });
 }
@@ -78,8 +74,7 @@ void fromGregorianToCJDNDayParameterLessThan1() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(
-          e.reason, equals('Parameter [day] should be between 1 to 31.'));
+      expect(e, equals('Parameter [day] should be between 1 to 31.'));
     }
   });
 }
@@ -91,8 +86,7 @@ void fromGregorianToCJDNDayParameterMoreThan31() {
       // ignore: avoid_catches_without_on_clauses
     } catch (e) {
       expect(e.runtimeType.toString(), equals('_CalendarConversionError'));
-      expect(e.reason,
-          equals('Parameter [day] should be between 1 to 31.'));
+      expect(e, equals('Parameter [day] should be between 1 to 31.'));
     }
   });
 }
